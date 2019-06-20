@@ -12,7 +12,6 @@ class GameOfStones
   def start!
     @player_names.cycle do |player_name|
       puts "There are #{@number_of_stones} left"
-      puts "#{player_name}: Pick a number between #{MIN_NUMBER_TO_PICK} and #{maximum_number_to_pick}"
       pick_a_number! player_name
       break if @number_of_stones.zero?
     end
@@ -21,6 +20,7 @@ class GameOfStones
   private
 
   def pick_a_number!(player_name)
+    puts "#{player_name}: Pick a number between #{MIN_NUMBER_TO_PICK} and #{maximum_number_to_pick}"
     number_of_stones_picked = gets.to_i
     if number_of_stones_picked.between?(MIN_NUMBER_TO_PICK, maximum_number_to_pick)
       @number_of_stones -= number_of_stones_picked
