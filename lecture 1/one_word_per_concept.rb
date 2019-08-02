@@ -1,37 +1,35 @@
 
 class Customer
   def fetch_customers
-    ...
+
   end
 end
 
 class Account
-  def retrieve_accounts
-    ...
+  def fetch_accounts
+
   end
 end
 
 class Contracts
-  def get_contracts
-    ...
+  def fetch_contracts
+
   end
 end
 
 class Customer
   def fetch_customers_from_db
-    ...
-  end
+  def fetch_customers_from_cache
 end
 
 class Account
   def fetch_accounts_from_file
-    ...
-  end
+  def fetch_accounts_from_cache
 end
 
 class Contracts
   def fetch_contracts_from_memory
-    ...
-  end
+  def fetch_contracts_from_cache
 end
+
 
